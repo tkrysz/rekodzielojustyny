@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90" role="img" aria-label="Justyna Rękodzieło">
+  <text x="0" y="48" font-family="Cormorant Garamond, Georgia, serif" font-size="46" fill="#3a2e27" letter-spacing="1">JUSTYNA</text>
+  <text x="26" y="76" font-family="Cormorant Garamond, Georgia, serif" font-size="17" fill="#3a2e27" letter-spacing="4">RĘKODZIEŁO</text>
+  <g fill="none" stroke="#a98550" stroke-width="1.2" stroke-linecap="round">
+    <path d="M210 82 C232 70 252 50 268 14"/>
+    <path d="M232 68 C226 58 228 50 236 46 C240 54 238 62 232 68Z"/>
+    <path d="M246 54 C240 44 244 36 252 33 C255 42 252 50 246 54Z"/>
+    <path d="M258 36 C254 28 258 20 265 18 C267 26 264 33 258 36Z"/>
+  </g>
+</svg>

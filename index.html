@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justyna Rękodzieło – biżuteria z duszą, stworzona dla Ciebie</title>
+  <meta name="description" content="Ręcznie robiona biżuteria: naszyjniki, kolczyki, pierścionki i bransoletki z naturalnych kamieni i metali szlachetnych. Rękodzieło z miłością w Polsce.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar">Darmowa dostawa od 250 zł · Każdy produkt wykonany ręcznie</div>
+
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Justyna Rękodzieło – strona główna"><img src="assets/logo.svg" alt="Justyna Rękodzieło"></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#sklep" data-filter="all">Nowości</a>
+      <a href="#sklep" data-filter="naszyjniki">Naszyjniki</a>
+      <a href="#sklep" data-filter="kolczyki">Kolczyki</a>
+      <a href="#sklep" data-filter="pierscionki">Pierścionki</a>
+      <a href="#sklep" data-filter="bransoletki">Bransoletki</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" id="fav-btn" aria-label="Ulubione">♡<span class="badge" id="fav-count" hidden>0</span></button>
+      <button class="icon-btn" id="cart-btn" aria-label="Koszyk">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+        <span class="badge" id="cart-count" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-text">
+        <h1>Biżuteria z duszą,<br>stworzona dla Ciebie</h1>
+        <a class="btn btn-outline" href="#sklep">Odkryj nasze kolekcje</a>
+      </div>
+    </section>
+
+    <section class="section" id="bestsellery">
+      <h2>Bestsellery tego sezonu</h2>
+      <div class="grid" id="bestsellers"></div>
+    </section>
+
+    <section class="section section-tight" id="kategorie">
+      <h2>Nasze kategorie</h2>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <section class="section" id="sklep">
+      <h2>Wszystkie produkty</h2>
+      <div class="filters" id="filters" role="tablist"></div>
+      <div class="grid" id="shop"></div>
+    </section>
+
+    <section class="about" id="o-nas">
+      <div class="about-img" aria-hidden="true">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#6b5441"/><rect y="190" width="400" height="110" fill="#4a3a2c"/>
+          <circle cx="120" cy="170" r="22" fill="#d4b06a"/><circle cx="185" cy="195" r="16" fill="#5d8f7b"/><circle cx="240" cy="165" r="12" fill="#c7a06a"/>
+          <path d="M260 60 l70 110" stroke="#d9d9d9" stroke-width="6" stroke-linecap="round"/><rect x="250" y="210" width="110" height="40" rx="4" fill="#2f2a2a"/></svg>
+      </div>
+      <div class="about-text">
+        <h2>Pasja ukryta w każdym detalu</h2>
+        <p>Ręcznie robiona biżuteria z naturalnych minerałów i metali szlachetnych. Każdy naszyjnik, kolczyk i pierścionek powstaje w małej pracowni, bez pośpiechu i bez masowej produkcji – dlatego żadne dwa egzemplarze nie są identyczne.</p>
+        <p class="sign">Rękodzieło z miłością w Polsce.</p>
+      </div>
+    </section>
+
+    <section class="section perks">
+      <div><strong>Wysyłka w 2–3 dni</strong><span>Kurier i paczkomaty</span></div>
+      <div><strong>14 dni na zwrot</strong><span>Bez podawania przyczyny</span></div>
+      <div><strong>Pakowanie prezentowe</strong><span>Z karteczką od serca</span></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="kontakt">
+    <div class="footer-top">
+      <div class="news">
+        <h3>Bądź na bieżąco!</h3>
+        <form id="newsletter" novalidate>
+          <input type="email" id="nl-email" placeholder="Wpisz swój adres e-mail" aria-label="Adres e-mail" required>
+          <button class="btn" type="submit">Zapisz się</button>
+        </form>
+        <p class="form-msg" id="nl-msg" role="status"></p>
+      </div>
+      <div class="foot-right">
+        <div class="social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+        <div class="links"><a href="#">Dostawa</a><a href="#">Zwroty</a><a href="#">FAQ</a><a href="#">Regulamin</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Kontakt: <a href="mailto:kontakt@justyna-rekodzielo.pl">kontakt@justyna-rekodzielo.pl</a></span>
+      <span>© <span id="year"></span> Justyna Rękodzieło</span>
+    </div>
+  </footer>
+
+  <!-- Szczegóły produktu -->
+  <dialog class="modal" id="product-modal">
+    <button class="modal-close" aria-label="Zamknij">×</button>
+    <div class="modal-body" id="modal-body"></div>
+  </dialog>
+
+  <!-- Koszyk -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Koszyk" aria-hidden="true">
+    <div class="drawer-head"><h3>Twój koszyk</h3><button class="modal-close" id="drawer-close" aria-label="Zamknij koszyk">×</button></div>
+    <div class="drawer-items" id="cart-items"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Razem</span><strong id="cart-total">0 zł</strong></div>
+      <a class="btn btn-block" id="checkout" href="#">Złóż zamówienie</a>
+      <p class="hint">To wersja demonstracyjna – zamówienie zostanie przygotowane jako wiadomość e-mail do pracowni.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
