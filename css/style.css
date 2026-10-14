@@ -43,11 +43,8 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); text-transform: uppercase; letter-sp
 
 /* Hero */
 .hero { position: relative; min-height: clamp(320px, 52vw, 520px); display: flex; align-items: center; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0;
-  background:
-    radial-gradient(circle at 78% 35%, rgba(212, 176, 106, .55), transparent 22%),
-    radial-gradient(ellipse at 80% 60%, #b99b78 0, #8d7157 40%, transparent 70%),
-    linear-gradient(100deg, #f1e8d6 0%, #e4d5ba 45%, #a68a69 100%); }
+.hero-bg { position: absolute; inset: 0; background: #e9dfcc url("../assets/pani-hero.jpg") 75% center / cover no-repeat; }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246, 239, 226, .55) 0%, rgba(246, 239, 226, 0) 55%); }
 .hero-text { position: relative; padding: 2rem clamp(1.5rem, 8vw, 7rem); max-width: 640px; }
 .hero h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); text-transform: uppercase; letter-spacing: .03em; margin-bottom: 1.5rem; }
 
@@ -159,6 +156,11 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); text-transform: uppercase; letter-sp
   .modal-img { aspect-ratio: 4/3; }
 }
 @media (max-width: 600px) {
+  .hero { min-height: 480px; align-items: flex-start; }
+  .hero-bg { background-position: 82% bottom; background-size: auto 78%; background-color: #f1e8d6; }
+  .hero-bg::after { background: linear-gradient(180deg, #f1e8d6 0%, rgba(241, 232, 214, 0) 45%); }
+  .hero-text { padding: 1.5rem 1.2rem; }
+  .hero h1 { font-size: 1.9rem; margin-bottom: 1rem; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .cats { grid-template-columns: 1fr; }
   .perks { grid-template-columns: 1fr; }
